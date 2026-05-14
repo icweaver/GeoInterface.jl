@@ -13,17 +13,21 @@ RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
 Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
 
+[sources]
+Makie = {rev="units-matrix", subdir="Makie", url="https://github.com/icweaver/Makie.jl"}
+CairoMakie = {rev="ff/breaking-0.25", subdir="CairoMakie", url="https://github.com/MakieOrg/Makie.jl"}
+
 [extensions]
 GeoInterfaceRecipesBaseExt = "RecipesBase"
 GeoInterfaceMakieExt = ["Makie", "GeometryBasics"]
 
 [compat]
 DataAPI = "1"
-CairoMakie = "0.15"
+CairoMakie = "0.15, 0.16"
 Extents = "0.1.1"
 GeoFormatTypes = "0.4"
 GeometryBasics = "0.5"
-Makie = "0.23, 0.24"
+Makie = "0.23, 0.24, 0.25"
 RecipesBase = "1"
 julia = "1.10"
 
